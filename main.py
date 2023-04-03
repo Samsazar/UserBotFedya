@@ -59,23 +59,23 @@ async def UserBot():
 
 
 
-from fastapi import FastAPI
-
-app = FastAPI()
+# from fastapi import FastAPI
 #
-#
-@app.get("/")
-async def read_root():
-    loop = asyncio.get_event_loop()
-    task = loop.create_task(UserBot())
-    future = asyncio.Future()
+# app = FastAPI()
+# #
+# #
+# @app.get("/")
+# async def read_root():
+#     loop = asyncio.get_event_loop()
+#     task = loop.create_task(UserBot())
+#     future = asyncio.Future()
 
     # Прикрепляем задачу и Future к текущему event loop
-    asyncio.ensure_future(task, loop=loop)
-    asyncio.ensure_future(future, loop=loop)
-    return {"Hello": "Space!"}
+    # asyncio.ensure_future(task, loop=loop)
+# asyncio.ensure_future(future, loop=loop)
+#     return {"Hello": "Space!"}
 
 # asyncio.run(UserBot())
 #
-# if __name__ == '__main__':
-#     appUserBot.run()
+if __name__ == '__main__':
+    asyncio.run(UserBot())
