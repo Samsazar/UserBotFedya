@@ -1,2 +1,5 @@
 fastapi~=0.95.0
 Pyrogram~=2.0.102
+pip~=20.2.3
+setuptools~=49.2.1
+uvicorn~=0.21.1
