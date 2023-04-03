@@ -57,6 +57,7 @@ async def UserBot():
 
     await idle()
 
+    await appUserBot.stop()
 
 
 # from fastapi import FastAPI
@@ -77,5 +78,5 @@ async def UserBot():
 
 # asyncio.run(UserBot())
 #
-if __name__ == '__main__':
-    asyncio.run(UserBot())
+# if __name__ == '__main__':
+asyncio.run(UserBot())
